@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/main.ts"],"sourcesContent":["const a: string = 'kellen'\r\n\r\nconsole.log(a)"],"names":["console","log"],"mappings":"gXAEAA,QAAQC,IAFU"}
