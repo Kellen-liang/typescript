@@ -1,7 +1,7 @@
 //语法：值 as 类型: value as string
 //　   <类型>值:  <string>value
 
-////这样写是有警告的应为B的接口上面是没有定义run这个属性的
+////这样写是有警告时因为B的接口上面是没有定义run这个属性的
 /* 
 interface A {
   run: string
