@@ -26,6 +26,10 @@ enum ColorNum3 {
   Green,  //1
   Blue  //2
 }
+//调用
+console.log(ColorNum3.Red);
+console.log(ColorNum3.Green);
+console.log(ColorNum3.Blue);
 
 //② 增长枚举
 enum ColorNum4 {
@@ -84,10 +88,10 @@ const enum Types{
 }
 
 //⑦ 反向映射
-//它包含了正向映射（ name -> value）和反向映射（ value -> name）
-//不会为字符串枚举成员生成反向映射。
+//它包含了正向映射(通过键获取值)（ name -> value）和反向映射(通过值获取键)（ value -> name）
+//不会为【字符串】枚举成员生成反向映射。
 enum ENUM {
-  fall
+  fall  //这个实际是fall: 0
 }
 const a = ENUM.fall
 console.log(a)  //0

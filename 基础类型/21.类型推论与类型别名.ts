@@ -1,6 +1,8 @@
 // 1. 类型推论
 // 什么一个没有类型的变量，TS自动推论出它的类型
 
+import { type } from "os";
+
 // 2. 类型别名
 // type 关键字（可以给一个类型定义一个名字）多用于符合类型
 
@@ -26,3 +28,20 @@ type value = boolean | 0 | '123'
 let sss1:value = true
 let sss2:value = 0
 let sss3:value = '123'
+
+// ⑤ type与 interface的区别
+// 1 interface可以通过extends 继承别的类型； type 只能通过交叉类型实现
+
+
+// 
+type s = number & B 
+interface A {
+  name: string
+}
+interface B {
+  age: number
+}
+
+const bb: s = {
+  age:1
+}

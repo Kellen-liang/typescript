@@ -5,7 +5,7 @@ class Person1 {
   gander: string
   constructor(name: string, age: number) {
     this.name = name,
-      this.age = age
+    this.age = age
   }
   fun() {
     console.log(this.name, this.age);
@@ -16,8 +16,8 @@ class Person1 {
 // 2.类的修饰符
 // 总共有三个 
 // public: 公共属性
-// private: 私有属性
-// protected: 受保护的属性：变量私有的只能在内部和继承的子类中访问 不能在外部访问
+// private: 私有属性: 只能在类中自己使用
+// protected: 受保护的属性：变量私有的只能在【内部】和继承的【子类】中访问 不能在外部访问
 class Person {
   public name:string
   private age:number 
@@ -64,8 +64,8 @@ class Phone {
 }
 
 //  4.interface定义类
-// 通过接口做一些限制,定义类
-// ts interface 定义类 使用关键字 mplements   
+// 通过接口做一些限制(约束 -> implements ),定义类
+// ts interface 定义类 使用关键字 implements   
 // 后面跟interface的名字，多个接口名用逗号隔开，继承还是用extends
 
  

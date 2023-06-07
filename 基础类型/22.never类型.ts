@@ -15,7 +15,7 @@ function loop(): never {
 function Void(): void {
   console.log();
 }
-//只会抛出异常没有返回值
+//never类型只会抛出异常没有返回值
 function Never(): never {
   throw new Error('aaa')
 }
